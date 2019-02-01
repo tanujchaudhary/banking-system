@@ -16,21 +16,29 @@ public login1()
 this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 setLayout(null);
+Font font = new Font("Impact", Font.BOLD,40);
+Font font1 = new Font("Times New Roman", Font.BOLD,18);
+
 b1=new JButton("login");
 l1=new JLabel("Username");
 l2=new JLabel("Password ");
-l3=new JLabel("WELCOME TO VIRTUAL BANKING SYSTEM");
+l3=new JLabel("WELCOME TO VIRTUAL BANKING SYSTEM USER PORTAL");
+l3.setFont(font);
+l1.setFont(font1);
+l2.setFont(font1);
+b1.setFont(font1);
 t1=new JTextField();
 t2=new JPasswordField();
 l1.setBounds(420,200,120,30);
 l2.setBounds(420,300,120,30);
-
+l3.setBounds(250,20,1500,100);
 t1.setBounds(520,200,140,30);
 t2.setBounds(520,300,140,30);
 b1.setBounds(480,400,120,40);
 b1.addActionListener(this);
 add(l1);
 add(l2);
+add(l3);
 add(t1);
 add(t2);
 add(b1);
