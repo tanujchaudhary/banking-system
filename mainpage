@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+/**
+ * @author maxx
+ *
+ */
+package mainpage;
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.WindowConstants;
+
+public class mainpage extends JFrame
+{
+	JLabel l1;
+
+public mainpage()
+{
+	this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+	setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	setLayout(new FlowLayout());
+	l1=new JLabel("welcome");
+	add(l1);
+	setVisible(true);
+}
+public static void main(String args[])
+{
+	mainpage obj = new mainpage();
+}
+}
