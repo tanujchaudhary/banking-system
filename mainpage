@@ -22,6 +22,27 @@ public mainpage()
 	setLayout(null);
 	Font font = new Font("Impact", Font.BOLD,40);
 	Font font1 = new Font("Times New Roman", Font.BOLD,17);
+	
+	
+
+    JPanel panel1=new JPanel();  
+    panel1.setBounds(195,175,320,380);    
+    panel1.setBackground(Color.gray);
+    
+    
+    
+    JPanel panel2=new JPanel();  
+    panel2.setBounds(695,175,320,380);    
+    panel2.setBackground(Color.gray);
+    
+    
+    
+    JPanel panel3=new JPanel();  
+    panel3.setBounds(1195,175,320,380);    
+    panel3.setBackground(Color.gray);
+	
+	
+	
 	l1=new JLabel("welcome to Virtual Banking System");
 	l2=new JLabel("create a new Account :");
 	l3=new JLabel("Money Transfer : ");
@@ -58,6 +79,17 @@ public mainpage()
 	add(b3);
 	add(l5);
 	add(b4);
+	add(panel1);
+	add(panel2);
+	add(panel3);
+	
+
+	
+	
+	
+	
+	
+	
 	setVisible(true);
 }
 public static void main(String args[])
